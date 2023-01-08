@@ -50,9 +50,6 @@ app.get('/quotes', (req, res) => {
   });
 });
 
-app.get('/product/:id', (req, res) => {
-  res.send(`Product Id : ${req.params.id} <br> Category : ${req.query.category}`);
-});
 
 app.use((req, res) => {
   res.status(404);
